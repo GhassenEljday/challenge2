@@ -47,12 +47,23 @@ Note: please write one or two lines here describing your solution.
 
 function makeComputer(type, color, weight) {
   // TODO: Your code here
-}
+  computer ={};
+  computer.type = type;
+  computer.color = color;
+  computer.weight = weight;
+  return computer;
 
+}
+var computer1 = makeComputer('HP','black','200g');
+var computer2 = makeComputer('Dell','black','500g');
 // Write a function displayComputer that can be used to display one computer.
 
 function displayComputer(computer) {
   // TODO: Your code here
+  for(var element in computer){
+    console.log(computer[element]);
+  }
+  
 }
 
 //=============================================================================
