@@ -74,12 +74,12 @@ uppercaseAll(strArr); ==> [ 'HELLO', 'WORLD', 'WHIRLED', 'PEAS' ]
 
 function uppercaseAll(arrayOfStrings) {
   // TODO: your code here
- return map(arrayOfStrings ,function(element, i){
+ return map(arrayOfStrings ,function(element){
     return  element.toUpperCase();
   })
    
 }
-
+// return every elemnt in the array after converted to upper Case.
 //=============================================================================
 /*                                  Q3                                       */
 //=============================================================================
@@ -121,7 +121,7 @@ function highestPopulation(arrayOfObjects) {
     return element['population'] > 500000000;
   })
 }
-
+//return the fitered value which is higher than 500m.
 //=============================================================================
 /*                              Q4                                           */
 //=============================================================================
@@ -144,7 +144,7 @@ function halveAll(numbers) {
     return number / 2;
   })
 }
-
+// return the number /2 after each iteration of map function.
 //=============================================================================
 /*                                  Q5                                       */
 //=============================================================================
@@ -159,6 +159,9 @@ Note: please write one or two lines here describing your solution.
 */
 function values(obj) {
   // TODO: your code here
+  return map(obj , function(element , key){
+    return element;
+  })
 }
-
+// return the element after each iteration.
 //Good Luck :))
